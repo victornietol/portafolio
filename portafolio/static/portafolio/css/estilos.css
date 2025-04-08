@@ -1,0 +1,8 @@
+#navbar {
+    transition: top 0.15s;
+}
+
+.bg-azulMarinoOscuro {
+    background-color: #00052f !important;
+    color: white !important;
+}
