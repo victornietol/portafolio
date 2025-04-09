@@ -11,8 +11,11 @@
             <h3 class="text-center text-secondary" style="letter-spacing: 1.5px;">Egresado de Ingeniería en Computación</h3>
         </div>
         <hr>
-        <div>
+        <div class="px-5 text-center">
             <p style="text-align: justify;">"Soy recién egresado de la Licenciatura en Ingeniería en Computación, con enfoque en Desarrollo de Software en busca de aplicar y ampliar mis habilidades y conocimientos en un entorno profesional con el objetivo de contribuir a la creación, implementación y mantenimiento de sistemas y aplicaciones que aporten valor. He desarrollado proyectos académicos y personales como aplicaciones móviles, chatbot básico basado en grafos, programas sencillos con interfaz para simular resultados de eventos, páginas web, bases de datos relacionales, implementación de servidores locales, desarrollo de videojuegos 2D y 3D, entre otros."</p>
+            <a class="btn btn-dark mb-3 mt-1" style="background: #020059;" href="{% url 'proyectos' %}">
+                Ver proyectos
+            </a>
         </div>
     </section>
 
@@ -77,12 +80,12 @@
                 <img src="{% static 'portafolio/img/github-logo.png' %}" title="GitHub" class="img-fluid mx-3" style="width: 80px;" alt="Logo GitHub" loading="lazy">
             </div>
         </div>
-
-
-        <div class="text-center gap-5 pt-3 pb-3">
-            
-            
-            
+        <hr>
+        <div class="pt-2">
+            <p class="texto-categoria-tec text-center">Desarrollo de videojuegos</p>
+            <div class="text-center" style="margin-top: -25px; margin-bottom: -15;">
+                <img src="{% static 'portafolio/img/unity-logo.png' %}" title="Unity" class="img-fluid" style="width: 150px;" alt="Logo Unity" loading="lazy">
+            </div>
         </div>
     </section>
 
