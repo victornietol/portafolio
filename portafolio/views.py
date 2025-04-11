@@ -15,3 +15,8 @@ def contacto(request):
     return render(request, 'contacto.html', {
         'pagina_actual':'contacto'
     })
+
+def proyecto_chatbot(request):
+    return render(request, 'proyectos/chatbot.html', {
+        'pagina_actual':'proyectos'
+    })

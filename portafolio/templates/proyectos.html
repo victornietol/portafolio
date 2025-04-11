@@ -1,9 +1,63 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}Proyectos | Portafolio{% endblock %}
 
 {% block content %}
     
-    
+    <div class="mt-5 mb-4">
+        <h1 class="display-4 text-center">Proyectos</h1>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <section class="col-md-6 col-lg-4 card card-body m-2 d-flex flex-column align-items-center justify-content-center">
+                    <div class="pt-2">
+                        <p class="texto-categoria-tec text-center">Chatbot Sencillo</p>
+                        <div class="d-flex flex-wrap">
+                            <div class="col-md-8 col-lg-8">
+                                <p style="text-align: justify;">
+                                    Para este proyecto relacionado con la construcción de un chatbot, la programación del sistema se realizó en Python implementando  diccionarios para apuntar a los distintos temas del chatbot, esto, buscando aplicar la lógica de un grafo. Además, se utilizó el paquete tkinter para crear una sencilla interfaz gráfica que ayudará a que el usuario tenga una experiencia muy parecida a la de las aplicaciones de mensajería convencionales.
+                                    <br><br>
+                                    El sistema muestra algunas recomendaciones de contenido multimedia en plataformas como Netflix, HBO Max, Disney+, Youtube y Spotify. Estas recomendaciones corresponden a películas, series, documentales, canciones o canales dependiendo de la plataforma que se le indique al chatbot.
+                                </p>
+                            </div>
+                            <div class="text-center col-md-4 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+                                <img src="{% static 'portafolio/img/proyectos/chatbot/prev.png' %}" title="Chatbot" class="img-fluid mx-3" style="width: 150px;" alt="Prev chatbot" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-dark mb-3 mt-1" style="background: #020059;" href="{% url 'proyecto_chatbot' %}">
+                                Ver proyecto
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="col-md-6 col-lg-4 card card-body m-2 d-flex flex-column align-items-center justify-content-center">
+                    <div class="pt-2">
+                        <p class="texto-categoria-tec text-center">Probabilidades de partidos</p>
+                        <div class="text-center pt-3 pb-3">
+                            
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="col-md-6 col-lg-4 card card-body m-2 d-flex flex-column align-items-center justify-content-center">
+                    <div class="pt-2">
+                        <p class="texto-categoria-tec text-center">Recomendador de bebidas sencillo</p>
+                        <div class="text-center pt-3 pb-3">
+
+                        </div>
+                    </div>
+                </section>
+            
+
+
+            </div>
+        </div>
+    </section>
 
 {% endblock %}
