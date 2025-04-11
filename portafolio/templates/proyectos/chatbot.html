@@ -12,7 +12,49 @@
     
     <section class="card card-body mt-5">
         <div class="px-5 text-center">
-            <p style="text-align: justify;">"Soy recién egresado de la Licenciatura en Ingeniería en Computación, con enfoque en Desarrollo de Software en busca de aplicar y ampliar mis habilidades y conocimientos en un entorno profesional con el objetivo de contribuir a la creación, implementación y mantenimiento de sistemas y aplicaciones que aporten valor. He desarrollado proyectos académicos y personales como aplicaciones móviles, chatbot básico basado en grafos, programas sencillos con interfaz para simular resultados de eventos, páginas web, bases de datos relacionales, implementación de servidores locales, desarrollo de videojuegos 2D y 3D, entre otros."</p>
+            <h3 class="pb-3 pt-3" style="text-align: start;">Descripción del sistema</h3>
+            <p style="text-align: justify;">
+                Como proyecto académico de matematicas discretas, correspondiente al tema de grafos, se construyó en Python un chatbot sencillo basado en esta estructura e implementado con diccionarios. Su funcionamiento es muy básico, si el sistema detecta en la entrada alguna palabra clave (tema dentro de su base de conocimiento), entonces muestra recomendaciones de contenido multimedia en plataformas como Netflix, HBO Max, Disney+, Youtube y Spotify. Estas recomendaciones serán películas, series, documentales, canciones o canales dependiendo de la plataforma que se le indique al chatbot.
+                <br><br>
+                Además, se utilizó el paquete tkinter para crear una sencilla interfaz gráfica que ayuda a que el usuario tenga una experiencia muy parecida a la de las aplicaciones de mensajería convencionales.
+                <br><br>
+                Como se mencionó anteriormente, el chatbot muestra recomendaciones de contenidos multimedia en diversas plataformas según le indique el usuario, pero para no dejar tan limitado el funcionamiento del agente, también es capaz de responder a otro tipo de mensajes como saludos, despedidas y agradecimientos; a si como a preguntas sobre el clima actual (se utilizó la API de OpenWeatherMap), la hora actual, que día es, información breve sobre alguna de las plataformas de las que se proveen recomendaciones, una breve sinopsis de cualquiera de las películas, series o documentales que se ofrecen como recomendación, y por último, se le puede preguntar por algún dato curioso y este elegirá uno al azar de entre 50 diferentes.
+                <br><br>
+                En cuanto a la cantidad de sugerencias que se pueden mostrar, Netflix y HBO Max cuentan con cinco categorías de películas que son acción, comedia, terror, deporte y animación, y cada una de ellas tiene cinco recomendaciones; por el lado de las series y documentales también se tienen cinco recomendaciones. Mientras que en Disney+ se dividen en películas y series solamente, en donde las películas cuentan con cuatro categorías como Pixar, Marvel, Star Wars y Disney, con cinco recomendaciones cada una; en el tema de las series también se tienen cinco recomendaciones. Hablando de Spotify, las recomendaciones primero se dividen en canciones y podcasts, por su parte, las canciones se encuentran divididas en trece categorías como top 10 global, top 10 México, entretenimiento, pop, urbano, romance, cumbia, salsa, rock, hip hop, electrónica, jazz y clásica, con 10 recomendaciones cada una; igualmente, los podcasts cuentan con 10 recomendaciones. Por último, en Youtube se muestran recomendaciones de canales que se dividen en categorías como mascotas, videojuegos, cocina, niños, tecnología y autos, con una cantidad de entre 6 y 8 recomendaciones dependiendo de la categoría.
+                <br><br>
+                Por lo tanto, la lógica de funcionamiento más simple de este sistema se basa en un grafo y en el recorrido de los vértices de este, donde todas estas opciones de consulta que se ofrecen se encuentran en diferentes vértices del grafo, y cada entrada que haga el usuario pasará por un filtro para identificar alguna de las palabras clave que tienen como objetivo dirigir el recorrido del grafo hacía alguno de los otros vértices con los que tiene relación el vértice de partida. Una vez que se llega al vértice deseado se muestra la información correspondiente de uno o varios de los elementos pertenecientes al conjunto en cuestión. Como resultado de esto, el grafo en el que se sustenta el funcionamiento del chatbot es el siguiente.
+            </p>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/grafo.jpg' %}" title="Grafo del sistema" class="img-fluid mx-auto d-block" alt="Img grafo" loading="lazy">
+        </div>
+    </section>
+
+    <section class="card card-body mt-5">
+        <div class="px-5 text-center">
+            <h3 class="pb-3 pt-3" style="text-align: start;">Funcionamiento del sistema</h3>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/1.png' %}" title="Descripcion chatbot 1" class="img-fluid mx-auto d-block" alt="Img chatbot 1" loading="lazy">
+            <div class="pt3 pb-3"></div>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/2.png' %}" title="Descripcion chatbot 2" class="img-fluid mx-auto d-block" alt="Img chatbot 2" loading="lazy">
+            <div class="pt3 pb-3"></div>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/3.png' %}" title="Descripcion chatbot 3" class="img-fluid mx-auto d-block" alt="Img chatbot 3" loading="lazy">
+            <div class="pt3 pb-3"></div>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/4.png' %}" title="Descripcion chatbot 4" class="img-fluid mx-auto d-block" alt="Img chatbot 4" loading="lazy">
+            <div class="pt3 pb-3"></div>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/5.png' %}" title="Descripcion chatbot 5" class="img-fluid mx-auto d-block" alt="Img chatbot 5" loading="lazy">
+            <div class="pt3 pb-3"></div>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/6.png' %}" title="Descripcion chatbot 6" class="img-fluid mx-auto d-block" alt="Img chatbot 6" loading="lazy">
+            <div class="pt3 pb-3"></div>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/7.png' %}" title="Descripcion chatbot 7" class="img-fluid mx-auto d-block" alt="Img chatbot 7" loading="lazy">
+            <div class="pt3 pb-3"></div>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/8.png' %}" title="Descripcion chatbot 8" class="img-fluid mx-auto d-block" alt="Img chatbot 8" loading="lazy">
+            <div class="pt3 pb-3"></div>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/9.png' %}" title="Descripcion chatbot 9" class="img-fluid mx-auto d-block" alt="Img chatbot 9" loading="lazy">
+            <div class="pt3 pb-3"></div>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/10.png' %}" title="Descripcion chatbot 10" class="img-fluid mx-auto d-block" alt="Img chatbot 10" loading="lazy">
+            <div class="pt3 pb-3"></div>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/11.png' %}" title="Descripcion chatbot 11" class="img-fluid mx-auto d-block" alt="Img chatbot 11" loading="lazy">
+            <div class="pt3 pb-3"></div>
+            <img src="{% static 'portafolio/img/proyectos/chatbot/12.png' %}" title="Descripcion chatbot 12" class="img-fluid mx-auto d-block" alt="Img chatbot 12" loading="lazy">
+
         </div>
     </section>
 
