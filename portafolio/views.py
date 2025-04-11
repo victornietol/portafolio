@@ -20,3 +20,8 @@ def proyecto_chatbot(request):
     return render(request, 'proyectos/chatbot.html', {
         'pagina_actual':'proyectos'
     })
+
+def proyecto_prob_partidos(request):
+    return render(request, 'proyectos/prob_partidos.html', {
+        'pagina_actual':'proyectos'
+    })
