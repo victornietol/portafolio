@@ -15,7 +15,7 @@
             <div class="row">
                 <section class="col-md-6 col-lg-4 card card-body m-2 d-flex flex-column align-items-center justify-content-center">
                     <div class="pt-2">
-                        <p class="texto-categoria-tec text-center">Chatbot Sencillo</p>
+                        <p class="texto-categoria-tec text-center fw-semibold">Chatbot Sencillo</p>
                         <div>
                             <p style="text-align: justify;">
                                 Para este proyecto relacionado con la construcción de un chatbot, la programación del sistema se realizó en Python implementando  diccionarios para apuntar a los distintos temas del chatbot, esto, buscando aplicar la lógica de un grafo. Además, se utilizó el paquete tkinter para crear una sencilla interfaz gráfica que ayudará a que el usuario tenga una experiencia muy parecida a la de las aplicaciones de mensajería convencionales.
@@ -41,7 +41,7 @@
                 
                 <section class="col-md-6 col-lg-4 card card-body m-2 d-flex flex-column align-items-center justify-content-center">
                     <div class="pt-2">
-                        <p class="texto-categoria-tec text-center">Probabilidades de partidos</p>
+                        <p class="texto-categoria-tec text-center fw-semibold">Probabilidades de partidos</p>
                         <div>
                             <p style="text-align: justify;">
                                 El objetivo de este proyecto fue simular un evento, por lo cual, se tomó la decisión de construir un sistema en Python con el que se pudieran obtener las probabilidades de que al enfrentarse dos equipos de futbol se obtuvieran como resultado los porcentajes de victoria o empate del encuentro.
@@ -68,9 +68,24 @@
                 
                 <section class="col-md-6 col-lg-4 card card-body m-2 d-flex flex-column align-items-center justify-content-center">
                     <div class="pt-2">
-                        <p class="texto-categoria-tec text-center">Recomendador de bebidas sencillo</p>
-                        <div class="text-center pt-3 pb-3">
-
+                        <p class="texto-categoria-tec text-center fw-semibold">Sistema de recomendaciones sencillo</p>
+                        <div>
+                            <p style="text-align: justify;">
+                                En este proyecto se diseño un clasificador bayesiano ingenuo que permite predecir el comportamiento de un cliente. Esto se utiliza para que el sistema pueda recomendar un tipo de bebida (fría o caliente) dependiendo de si el cliente es una persona menor, adulta o un adulto mayor; y también dependiendo del estado del clima que se le indique (cálido, frío o templado).
+                            </p>
+                            <p>
+                                <span class="badge bg-warning text-dark">Python</span>
+                                <span class="badge bg-warning text-dark">Tkinter</span>
+                                <span class="badge bg-warning text-dark">Pandas</span>
+                            </p>
+                            <div class="text-center">
+                                <img src="{% static 'portafolio/img/proyectos/recomendador_beb/prev.png' %}" title="Recomendador bebidas" class="img-fluid mt-2"  alt="Prev recomendador bebidas" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-dark mb-3 mt-4" style="background: #020059;" href="{% url 'proyecto_recomendador_beb' %}">
+                                <i class="bi bi-eye-fill"></i> Ver proyecto
+                            </a>
                         </div>
                     </div>
                 </section>

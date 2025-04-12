@@ -25,3 +25,8 @@ def proyecto_prob_partidos(request):
     return render(request, 'proyectos/prob_partidos.html', {
         'pagina_actual':'proyectos'
     })
+
+def proyecto_recomendador_beb(request):
+    return render(request, 'proyectos/recomendador_beb.html', {
+        'pagina_actual':'proyectos'
+    })
