@@ -41,7 +41,11 @@
         <div class="px-5 text-center">
             <h3 class="pb-3 pt-3" style="text-align: start;">Descripción del sistema</h3>
             <p style="text-align: justify;">
-                
+                Como proyecto académico de la materia Modelado y Simulación se propuso realizar un sistema que simulara algún tipo de evento, por lo cual, se tomó la decisión de construir un sencillo sistema en Python con el que se pudieran obtener las probabilidades de que al enfrentarse dos equipos de futbol se obtuvieran como resultado los porcentajes de victoria o empate del encuentro.
+                <br><br>
+                Estas probabilidades se obtienen utilizando la distribución de Poisson y modelos simplificados basados en estadísticas pasadas con datos introducidos por el usuario, los cuales, corresponden a goles anotados, goles recibidos, partidos jugados, tiros a puerta, porterías imbatidas, cantidad de goles recientes por encuentro de sus últimos encuentros, y un factor de local. Los resultados se muestran mediante gráficas para facilitar su visualización y análisis con ayuda de Matplotlib.
+                <br><br>
+                Para cada partido, se realizan 1000 simulaciones con el objetivo de obtener un promedio de los resultados. Para cada simulación, primero se calcula el factor de ataque y defensa de ambos equipos, después se ajustan estos resultados con base en goles recientes. Posteriormente, se calculan los goles esperados para poder generar el valor de goles simulados aplicando Poisson con el objetivo de obtener la probabilidad de cuantos goles podrían ocurrir durante el partido, ya que la distribución de Poisson ayuda a buscar la probabilidad de que un número de eventos sucedan en un intervalo. Teniendo los datos anteriores de las 1000 simulaciones, finalmente se obtiene el promedio de goles anotados por cada equipo y la probabilidad de que gane el equipo 1, gane el equipo 2 o que empaten.
             </p>
         </div>
     </section>
@@ -49,19 +53,78 @@
     <section class="card card-body mt-3">
         <div class="px-5 text-center">
             <h3 class="pb-4 pt-4" style="text-align: start;">Funcionamiento del sistema</h3>
-            
+            <section class="card card-body mb-2">
+               <p style="text-align: justify;">
+                    Al ejecutar el programa, se abre la siguiente ventana con datos predeterminados (estos datos se pueden borran con el botón "Limpiar campos"). Para realizar una simulación se deben llenar los campos y presionar el botón "Iniciar".
+               </p>
+               <img src="{% static 'portafolio/img/proyectos/prob_partidos/1.png' %}" title="Interfaz del sistema" class="img-fluid mx-auto d-block border border-dark rounded" alt="Img sistema" loading="lazy">
+            </section>
+            <section class="card card-body mt-2 mb-2">
+                <p style="text-align: justify;">
+                    En caso de que el usuario introduzca un valor erróneo o haya un campo vacío, entonces se muestra un mensaje de error como en la siguiente captura. 
+                </p>
+                <img src="{% static 'portafolio/img/proyectos/prob_partidos/2.png' %}" title="Error en un campo" class="img-fluid mx-auto d-block border border-dark rounded" alt="Img error sistema" loading="lazy">
+            </section>
+            <section class="card card-body mt-2 mb-2 pb-2">
+                <p style="text-align: justify;">
+                    Una vez presionado el botón "Iniciar", se muestran los resultados de la simulación en la parte derecha de la ventana, donde se puede cambiar la visualización entre tres gráficas distintas.
+                </p>
+                <img src="{% static 'portafolio/img/proyectos/prob_partidos/3.png' %}" title="Resultados 1" class="img-fluid mx-auto d-block border border-dark rounded mb-2" alt="Img resultados sistema" loading="lazy">
+                <img src="{% static 'portafolio/img/proyectos/prob_partidos/4.png' %}" title="Resultados 2" class="img-fluid mx-auto d-block border border-dark rounded mt-2 mb-2" alt="Img resultados sistema" loading="lazy">
+                <img src="{% static 'portafolio/img/proyectos/prob_partidos/5.png' %}" title="Resultados 3" class="img-fluid mx-auto d-block border border-dark rounded mt-2 mb-2" alt="Img resultados sistema" loading="lazy">
+            </section>
         </div>
     </section>
 
     <section class="card card-body mt-3">
         <div class="px-5 text-center">
             <h3 class="pb-4 pt-4" style="text-align: start;">Descripción de la interfaz</h3>
-            
+            <img src="{% static 'portafolio/img/proyectos/prob_partidos/6.png' %}" title="Descripcion interfaz" class="img-fluid mx-auto d-block" alt="Img interfaz sistema" loading="lazy">
         </div>
-        <div class="mt-3 mb-3"></div>
+        <div class="mt-2 mb-3"></div>
         <div class="px-5">
-                
-            
+            <section class="card card-body mt-2 mb-2">
+                <strong>1. Campos de entrada</strong>
+                <p style="text-align: justify;">
+                    En esta sección se introducen las estadísticas de cada equipo para poder realizar la simulación.
+                </p>
+            </section>
+            <section class="card card-body mt-2 mb-2">
+                <strong>2. Botón "Iniciar"</strong>
+                <p style="text-align: justify;">
+                    Ejecuta la simulación con los datos introducidos. En caso de que un campo contenga un valor incorrecto entonces se muestra un mensaje de error.
+                </p>
+            </section>
+            <section class="card card-body mt-2 mb-2">
+                <strong>3. Botón "Limpiar campos"</strong>
+                <p style="text-align: justify;">
+                    Elimina los valores de los campos de las estadísticas de cada equipo, así como, los resultados y las imagenes de las gráficas.
+                </p>
+            </section>
+            <section class="card card-body mt-2 mb-2">
+                <strong>4. Resultados</strong>
+                <p style="text-align: justify;">
+                    En esta sección se muestran los valores de las probabilidades de victoria o empate, y el promedio de goles del encuentro.
+                </p>
+            </section>
+            <section class="card card-body mt-2 mb-2">
+                <strong>5. Gráficas</strong>
+                <p style="text-align: justify;">
+                    Muestra las gráficas con los datos generados en la simulación.
+                </p>
+            </section>
+            <section class="card card-body mt-2 mb-2">
+                <strong>6. Indicador de posición</strong>
+                <p style="text-align: justify;">
+                    Este indicador muestra cuál de las tres gráficas se mmuestra en pantalla. Si se cambia de gráfica, entonces el indicador cambia de posición. 
+                </p>
+            </section>
+            <section class="card card-body mt-2 mb-2">
+                <strong>7. Botón de desplazamiento</strong>
+                <p style="text-align: justify;">
+                    Los botones con flechas sirven para cambiar entre una gráfica y otra.
+                </p>
+            </section>
         </div>
     </section>
 
