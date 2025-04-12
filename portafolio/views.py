@@ -30,3 +30,8 @@ def proyecto_recomendador_beb(request):
     return render(request, 'proyectos/recomendador_beb.html', {
         'pagina_actual':'proyectos'
     })
+
+def proyecto_gestor_presupuestos(request):
+    return render(request, 'proyectos/gestor_presupuestos.html', {
+        'pagina_actual':'proyectos'
+    })

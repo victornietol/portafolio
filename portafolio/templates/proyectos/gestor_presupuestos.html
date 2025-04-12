@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Gestor presupuestos | Portafolio{% endblock %}
+
+{% block content %}
+
+    <div class="mt-5 mb-4">
+        <h1 class="display-4 text-center">App - Gestor de presupuestos</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light">
+                <div class="px-5 text-center">
+                    <h3>Tecnologías empleadas</h3>
+                    <p>
+                        <i class="bi bi-code-slash"></i> Python
+                        <br>
+                        <i class="bi bi-gear-fill"></i> Tkinter • Pandas
+                    </p>
+                </div>
+            </section>
+            
+            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light">
+                <div class="px-5 text-center">
+                    <h3>Repositorio</h3>
+                    <p>
+                        <i class="bi bi-github"></i>
+                        <a class="text-break w-100" href="https://github.com/victornietol/Proyectos/blob/main/Proyecto_Prob_Est/Actualizacion_13_04_2022/Proyecto.pyw">
+                            https://github.com/victornietol/Proyectos/blob/main/Proyecto_Prob_Est/Actualizacion_13_04_2022/Proyecto.pyw
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <section class="card card-body mt-2">
+        <div class="px-5 text-center">
+            <h3 class="pb-3 pt-3" style="text-align: start;">Descripción del sistema</h3>
+            <p style="text-align: justify;">
+                desc
+            </p>
+        </div>
+    </section>
+
+    <section class="card card-body mt-3">
+        <div class="px-5 text-center">
+            <h3 class="pb-4 pt-4" style="text-align: start;">Funcionamiento del sistema</h3>
+            
+        </div>
+    </section>
+
+    <section class="card card-body mt-3">
+        <div class="px-5 text-center">
+            <h3 class="pb-4 pt-4" style="text-align: start;">Descripción de la interfaz</h3>
+            <img src="{% static 'portafolio/img/proyectos/recomendador_beb/6.png' %}" title="Descripcion interfaz" class="img-fluid mx-auto d-block" alt="Img interfaz sistema" loading="lazy">
+        </div>
+        <div class="mt-2 mb-3"></div>
+        <div class="px-5">
+            <section class="card card-body mt-2 mb-2">
+                <strong>1. Opciones</strong>
+                <p style="text-align: justify;">
+                    <Strong>1.1. Objetivo y definición</Strong>
+                    Esta pestaña despliega el objetivo y definición del proyecto.
+                </p>
+                <img src="{% static 'portafolio/img/proyectos/recomendador_beb/7.png' %}" title="Descripcion interfaz 1" class="img-fluid mx-auto d-block mb-4" alt="Img interfaz sistema 1" loading="lazy">
+            </section>
+            
+        </div>
+    </section>
+
+{% endblock %}
