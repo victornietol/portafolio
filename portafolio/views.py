@@ -35,3 +35,8 @@ def proyecto_gestor_presupuestos(request):
     return render(request, 'proyectos/gestor_presupuestos.html', {
         'pagina_actual':'proyectos'
     })
+
+def proyecto_guia_videojuego(request):
+    return render(request, 'proyectos/guia_videojuego.html', {
+        'pagina_actual':'proyectos'
+    })
