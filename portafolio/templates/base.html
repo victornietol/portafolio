@@ -64,9 +64,7 @@
 
     <footer class="bg-dark text-secondary text-center py-3 mt-auto">
         <p class="mb-0">
-            2025 | Victor Manuel Nieto Licona. Todos los derechos reservados.
-            <br>
-            Contacto: victornieto.nl@gmail.com
+            2025 | Victor Manuel Nieto Licona | <a class="text-secondary" href="{% url 'contacto' %}">Contacto</a>
         </p>
     </footer>
 
@@ -74,13 +72,27 @@
     <div class="modal fade" id="modalImagen" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content bg-transparent border-0">
-                <div class="modal-body d-flex flex-column justify-content-center align-items-center p-0">
-                    {# Boton para cerrar la imagen #}
-                    <button type="button" class="btn btn-light mb-3" data-bs-dismiss="modal">
-                        <i class="bi bi-x-lg"></i>
-                    </button>
+                <div class="modal-body d-flex flex-column p-0 position-relative">
+                    {# Botones #}
+                    <div class="d-flex justify-content-center gap-5 mb-3 mt-3 z-3" style="position: relative;">
+                        {# Botones de zoom #}
+                        <div class="d-flex gap-2">
+                            <button id="zoomInBtn" class="btn btn-light">
+                                <i class="bi bi-zoom-in"></i>
+                            </button>
+                            <button id="zoomOutBtn" class="btn btn-light">
+                                <i class="bi bi-zoom-out"></i>
+                            </button>
+                        </div>
+                        {# Boton para cerrar la imagen #}
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
                     {# Imagen #}
-                    <img id="imagenModal" src="" alt="Imagen ampliada" class="img-fluid rounded shadow-lg animate__animated animate__zoomIn animate__faster" style="max-width: 100%; max-height: 95vh; object-fit: contain;">
+                    <div class="d-flex justify-content-center align-items-start">
+                        <img id="imagenModal" src="" alt="Imagen ampliada" class="img-fluid rounded shadow-lg animate__animated animate__zoomIn animate__faster" style="max-width: 100%; max-height: 95vh; object-fit: contain; transform-origin: top center;">
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,6 +105,23 @@
             img.addEventListener("click", () => {
                 imagenModal.src = img.src; // Asignar la dirección al modal
             });
+        });
+        // Hacer zoom al hacer click en los botones
+        let currentScale = 1;
+        document.getElementById("zoomInBtn").addEventListener("click", () => {
+            currentScale +=0.1;
+            imagenModal.style.transform = `scale(${currentScale})`;
+        });
+        document.getElementById("zoomOutBtn").addEventListener("click", () => {
+            if(currentScale>0.2) {
+                currentScale -=0.1;
+                imagenModal.style.transform = `scale(${currentScale})`;
+            }
+        });
+            // Restaurar escala cuando se cierre el modal
+        document.getElementById("modalImagen").addEventListener("hidden.bs.modal", () => {
+            currentScale = 1;
+            imagenModal.style.transform = `scale(${currentScale})`;
         });
     </script>
 

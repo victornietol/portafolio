@@ -1,9 +1,37 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}Contacto | Portafolio{% endblock %}
 
 {% block content %}
     
-    
+    <div class="mt-5 mb-4">
+        <h1 class="display-4 text-center">Contacto</h1>
+    </div>
+
+    <section class="card card-body mt-5 pt-4 bg-light">
+        <div class="px-md-5 text-center">
+            <img src="{% static 'portafolio/img/logos/logo-personal-sinFondo-2.png' %}" class="pb-3" style="max-width: 80px;" alt="Logo">
+            <p>
+                <strong>Victor Manuel Nieto Licona</strong>
+                <br>
+                <i class="bi bi-envelope-at-fill"></i> Correo: victornieto.nl@gmail.com
+                <br>
+                <i class="bi bi-github"></i> GitHub: <a target="_blank" href="https://github.com/victornietol">victornietol</a>
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 
 {% endblock %}
