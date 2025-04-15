@@ -143,6 +143,29 @@
                         </div>
                     </div>
                 </section>
+
+                <section class="col-md-6 col-lg-4 card card-body m-2 d-flex flex-column align-items-center justify-content-center">
+                    <div class="pt-2">
+                        <p class="texto-categoria-tec text-center fw-semibold">Bases de datos relacionales</p>
+                        <div>
+                            <p style="text-align: justify;">
+                                En esta sección se colocaron algunas de las bases de datos relacionales que he implementado como parte de proyectos académicos. Dichas bases, se modelaron teniendo en cuenta las formas normales para cuidar la integradad de los datos y evitar redundancia. Al final de cada sección correspondiente a una base, se incluye el diagrama entidad-relación de la base de datos y los enlaces a los scripts <i>.sql</i> con la creación de tablas, inserciones, triggers, procedimientos almacenados, funciones y vistas, según sea el caso.
+                            </p>
+                            <p>
+                                <span class="badge bg-warning text-dark">SQL</span>
+                                <span class="badge bg-warning text-dark">MySQL</span>
+                            </p>
+                            <div class="text-center">
+                                <img src="{% static 'portafolio/img/proyectos/bases_datos_sql/DER-BD-1.png' %}" title="Recomendador bebidas" class="img-fluid mt-2 w-75" data-bs-toggle="modal" data-bs-target="#modalImagen" style="cursor: zoom-in;" alt="Prev recomendador bebidas" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-dark mb-3 mt-4" style="background: #020059;" href="{% url 'proyecto_bases_datos_sql' %}">
+                                <i class="bi bi-eye-fill"></i> Ver proyectos
+                            </a>
+                        </div>
+                    </div>
+                </section>
             
 
 

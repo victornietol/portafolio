@@ -10,4 +10,5 @@ urlpatterns = [
     path("proyecto_recomendador_beb/", views.proyecto_recomendador_beb, name="proyecto_recomendador_beb"),
     path("proyecto_gestor_presupuestos/", views.proyecto_gestor_presupuestos, name="proyecto_gestor_presupuestos"),
     path("proyecto_guia_videojuego/", views.proyecto_guia_videojuego, name="proyecto_guia_videojuego"),
+    path("proyecto_bases_datos_sql/", views.proyecto_bases_datos_sql, name="proyecto_bases_datos_sql"),
 ]

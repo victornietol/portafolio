@@ -40,3 +40,8 @@ def proyecto_guia_videojuego(request):
     return render(request, 'proyectos/guia_videojuego.html', {
         'pagina_actual':'proyectos'
     })
+
+def proyecto_bases_datos_sql(request):
+    return render(request, 'proyectos/bases_datos_sql.html', {
+        'pagina_actual':'proyectos'
+    })
