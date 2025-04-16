@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}403 - Sin autorización | Portafolio{% endblock %}
+
+{% block content %}
+    
+<div class="mt-5">
+    <i class="bi bi-exclamation-triangle-fill icon-404 fs-1"></i>
+    <h1 class="display-4">¡Oops! Sin autorización</h1>
+    <p class="lead">No tienes autorización para visitar esa URL.</p>
+    <a href="{% url 'home' %}" class="btn btn-warning btn-home">
+        <i class="bi bi-house-door-fill me-2"></i>Volver al inicio
+    </a>
+</div>
+    
+
+{% endblock %}
