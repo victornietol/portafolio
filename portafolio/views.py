@@ -45,3 +45,8 @@ def proyecto_bases_datos_sql(request):
     return render(request, 'proyectos/bases_datos_sql.html', {
         'pagina_actual':'proyectos'
     })
+
+def proyecto_compilador_sencillo(request):
+    return render(request, 'proyectos/compilador_sencillo.html', {
+        'pagina_actual':'proyectos'
+    })

@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Compilador sencillo con Python | Portafolio{% endblock %}
+
+{% block content %}
+
+    <div class="mt-5 mb-4">
+        <h1 class="display-4 text-center">Compilador sencillo con Python</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light">
+                <div class="px-md-5 text-center">
+                    <h3>Tecnologías empleadas</h3>
+                    <p>
+                        <i class="bi bi-code-slash"></i> Python
+                        <br>
+                        <i class="bi bi-gear-fill"></i> Tkinter • Pandas
+                    </p>
+                </div>
+            </section>
+            
+            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light">
+                <div class="px-md-5 text-center">
+                    <h3>Repositorio</h3>
+                    <p>
+                        <i class="bi bi-github"></i>
+                        <br>
+                        <a class="text-break w-100" href="https://github.com/victornietol/Proyectos/blob/main/Proyecto_Prob_Est/Actualizacion_13_04_2022/Proyecto.pyw" target="_blank" rel="noopener noreferrer">
+                            https://github.com/victornietol/Proyectos/blob/main/Proyecto_Prob_Est/Actualizacion_13_04_2022/Proyecto.pyw
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <section class="card card-body mt-2">
+        <div class="px-md-5 text-center">
+            <h3 class="pb-3 pt-3" style="text-align: start;">Descripción del sistema</h3>
+            <p style="text-align: justify;">
+                a
+            </p>
+        </div>
+    </section>
+
+    <section class="card card-body mt-3">
+        <div class="px-md-5 text-center">
+            <h3 class="pb-4 pt-4" style="text-align: start;">Funcionamiento del sistema</h3>
+            <p style="text-align: justify;">
+                El procesamiento de los datos se lleva de la siguiente manera. Primero se categorizan los 1,000 registros bajo los criterios:
+            </p>
+            
+        </div>
+    </section>
+
+    <section class="card card-body mt-3">
+        <div class="px-md-5 text-center">
+            <h3 class="pb-4 pt-4" style="text-align: start;">Descripción de la interfaz</h3>
+            <img src="{% static 'portafolio/img/proyectos/recomendador_beb/6.png' %}" title="Descripcion interfaz" class="img-fluid mx-auto d-block" data-bs-toggle="modal" data-bs-target="#modalImagen" style="cursor: zoom-in;" alt="Img interfaz sistema" loading="lazy">
+        </div>
+        <div class="mt-2 mb-3"></div>
+        <div class="px-md-5">
+            <section class="card card-body mt-2 mb-2">
+                <strong>2. Entrada de datos</strong>
+                <p style="text-align: justify;">
+                    En cada casilla se ingresan la edad y la temperatura del día para que se pueda generar la consulta. La edad se puede ingresar con los criterios de menor, adulto, mayor, o con la edad en número. La temperatura se puede ingresar con valores numéricos o con frío, templado o cálido. 
+                </p>
+            </section>
+            
+        </div>
+    </section>
+
+{% endblock %}
