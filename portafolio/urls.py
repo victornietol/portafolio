@@ -12,4 +12,5 @@ urlpatterns = [
     path("proyecto_guia_videojuego/", views.proyecto_guia_videojuego, name="proyecto_guia_videojuego"),
     path("proyecto_bases_datos_sql/", views.proyecto_bases_datos_sql, name="proyecto_bases_datos_sql"),
     path("proyecto_compilador_sencillo/", views.proyecto_compilador_sencillo, name="proyecto_compilador_sencillo"),
+    path("proyecto_videojuegos/", views.proyecto_videojuegos, name="proyecto_videojuegos"),
 ]

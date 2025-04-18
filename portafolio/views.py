@@ -50,3 +50,8 @@ def proyecto_compilador_sencillo(request):
     return render(request, 'proyectos/compilador_sencillo.html', {
         'pagina_actual':'proyectos'
     })
+
+def proyecto_videojuegos(request):
+    return render(request, 'proyectos/videojuegos.html', {
+        'pagina_actual':'proyectos'
+    })
