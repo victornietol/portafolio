@@ -55,3 +55,8 @@ def proyecto_videojuegos(request):
     return render(request, 'proyectos/videojuegos.html', {
         'pagina_actual':'proyectos'
     })
+
+def proyecto_algoritmoGenetico_AFD(request):
+    return render(request, 'proyectos/algoritmoGenetico_AFD.html', {
+        'pagina_actual':'proyectos'
+    })
