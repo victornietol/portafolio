@@ -60,3 +60,8 @@ def proyecto_algoritmoGenetico_AFD(request):
     return render(request, 'proyectos/algoritmoGenetico_AFD.html', {
         'pagina_actual':'proyectos'
     })
+
+def proyecto_practica_cifrado(request):
+    return render(request, 'proyectos/practica_cifrado.html', {
+        'pagina_actual':'proyectos'
+    })
