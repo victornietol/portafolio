@@ -7,12 +7,25 @@
 {% block content %}
 
     <div class="mt-5 mb-4">
-        <h1 class="display-4 text-center">Bases de datos SQL</h1>
+        <h1 class="display-4 text-center">
+            <span className="palabra">
+                <span class="letra-hover-efecto">B</span><span class="letra-hover-efecto">a</span><span class="letra-hover-efecto">s</span><span class="letra-hover-efecto">e</span><span class="letra-hover-efecto">s</span>
+                </span>
+            <span>
+                <span class="letra-hover-efecto">d</span><span class="letra-hover-efecto">e</span>
+            </span>
+            <span className="palabra">
+                <span class="letra-hover-efecto">d</span><span class="letra-hover-efecto">a</span><span class="letra-hover-efecto">t</span><span class="letra-hover-efecto">o</span><span class="letra-hover-efecto">s</span>
+            </span>
+            <span className="palabra">
+                <span class="letra-hover-efecto">S</span><span class="letra-hover-efecto">Q</span><span class="letra-hover-efecto">L</span>
+            </span>
+        </h1>
     </div>
 
     <div class="container">
         <div class="row">
-            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light">
+            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light efecto-card-glow">
                 <div class="px-md-5 text-center">
                     <h3>Tecnologías empleadas</h3>
                     <p>
@@ -23,7 +36,7 @@
                 </div>
             </section>
             
-            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light">
+            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light efecto-card-glow">
                 <div class="px-md-5 text-center">
                     <h3>Repositorios</h3>
                     <p>
@@ -42,22 +55,22 @@
         </div>
     </div>
     
-    <section class="card card-body mt-2">
-        <div class="px-md-5 text-center">
-            <h3 class="pb-3 pt-3" style="text-align: start;">Descripción</h3>
-            <p style="text-align: justify;">
+    <section class="card card-body mt-2 card-borde">
+        <div class="px-md-5">
+            <h3 class="pb-3 pt-3 texto-subt-efecto" style="text-align: start;">Descripción</h3>
+            <p>
                 En esta sección se colocaron algunas de las bases de datos relacionales que he implementado como parte de proyectos académicos. Dichas bases, se modelaron teniendo en cuenta las formas normales para cuidar la integradad de los datos y evitar redundancia. Al final de cada sección correspondiente a una base, incluyo el diagrama entidad-relación de la base de datos y los enlaces a los scripts <i>.sql</i> con la creación de tablas, inserciones, triggers, procedimientos almacenados, funciones y vistas, según sea el caso. Las bases de datos que se muestran corresponden: <a href="#bd_centrales">Centrales électricas</a>, <a href="#bd_universidad">Gestión académica de Universidad</a>, <a href="#bd_cine">Cine</a>.
             </p>
         </div>
     </section>
 
-    <section id="bd_centrales" class="card card-body mt-3">
-        <div class="px-md-5 text-center">
-            <h3 class="pb-4 pt-4" style="text-align: start;">1. Base de datos: Centrales électricas</h3>
-            <p style="text-align: justify;">
+    <section id="bd_centrales" class="card card-body mt-3 card-borde">
+        <div class="px-md-5">
+            <h3 class="pb-4 pt-4 texto-subt-efecto" style="text-align: start;">1. Base de datos: Centrales électricas</h3>
+            <p>
                 El modelo de negocios para esta base de datos corresponde a la administración de la energía eléctrica que se produce en un determinado país. Se cuidó que los campos fueran atómicos, que las tablas tuvieran llaves primarias, que las tablas tuvieran relación bajo la lógica del modelo de negocios con llaves foráneas, y también se definieron tablas catalogo para datos repetitivos como países. Las entidades principales de la base que se plantearon se mencionan a continuación.
             </p>
-            <h4 style="text-align: start;">Entidades</h4>
+            <h4 class="texto-subt-efecto" style="text-align: start;">Entidades</h4>
             <ul>
                 <li>
                     <p style="text-align: justify;">
@@ -196,7 +209,7 @@
                 </li>
             </ul>
             <div class="mt-4" style="text-align: start;">
-                <h4>Scripts</h4>
+                <h4 class="texto-subt-efecto">Scripts</h4>
                 <p>
                     <ul>
                         <li>
@@ -215,13 +228,13 @@
         </div>
     </section>
 
-    <section id="bd_universidad" class="card card-body mt-3">
-        <div class="px-md-5 text-center">
-            <h3 class="pb-4 pt-4" style="text-align: start;">2. Base de datos: Gestión Académica de Universidad</h3>
-            <p style="text-align: justify;">
+    <section id="bd_universidad" class="card card-body mt-3 card-borde">
+        <div class="px-md-5">
+            <h3 class="pb-4 pt-4 texto-subt-efecto" style="text-align: start;">2. Base de datos: Gestión Académica de Universidad</h3>
+            <p>
                 Este proyecto académico, correspondiente al diseño de la base de datos para una universidad, se realizó con base en las relaciones entre las distintas entidades propuestas para el modelo de negocios y con el objetivo de mejorar la administración de los procesos administrativos y llevar un control sobre los estudiantes inscritos, profesores, cursos, carreras, calificaciones, etc. La base consta principalmente de 12 tablas con datos correspondientes al modelo de negocios (que en este caso es una universidad). Y 2 tablas extra solicitas en los requerimientos del proyecto planteado por el profesor, correspondientes a la administración de la base de datos en donde una de ellas cumple el objetivo de almacenar los movimientos relacionados con inserciones, actualizaciones y eliminaciones en la base, y la otra tabla tiene el objetivo de almacenar los usuarios que manipulan la base, esto, con el objetivo de poner en práctica ciertos triggers al manipular ciertas tablas.
             </p>
-            <h4 style="text-align: start;">Entidades</h4>
+            <h4 class="texto-subt-efecto" style="text-align: start;">Entidades</h4>
             <ul>
                 <li>
                     <p style="text-align: justify;">
@@ -323,13 +336,13 @@
                 </li>
             </ul>
             <div class="mt-4">
-                <h4 style="text-align: start;">Triggers</h4>
+                <h4 class="texto-subt-efecto" style="text-align: start;">Triggers</h4>
                 <p style="text-align: justify;">
                     Se crearon triggers del tipo <i>before insert, before update</i> y <i>after delete</i> en cada una de las tablas de la base a excepción de la tabla bitácora con el objetivo de realizar un manejo y validación de los datos introducidos, lo cual, se ve reflejado en una mejora de la calidad de los datos. También se implementaron con la misión de tener un registro automático de las operaciones que se realizan en la base de datos y mejorar el control.
                 </p>
             </div>
             <div class="mt-4">
-                <h4 style="text-align: start;">Procedimientos almacenados</h4>
+                <h4 class="texto-subt-efecto" style="text-align: start;">Procedimientos almacenados</h4>
                 <p style="text-align: justify;">
                     Los procedimientos almacenados realizados tienen el objetivo de agilizar acciones en la base de datos como inscribir cursos por parte un alumno, automatizar la asignación de horarios en salones libres para distintos cursos, inserciones de profesores y estudiantes, etc. Por lo tanto, se definieron los siguientes 14 procedimientos con funciones específicas: 
                 </p>
@@ -435,7 +448,7 @@
                 </ul>
             </div>
             <div class="mt-4">
-                <h4 style="text-align: start;">Vistas</h4>
+                <h4 class="texto-subt-efecto" style="text-align: start;">Vistas</h4>
                 <p style="text-align: justify;">
                     Se crearon 13 vistas para agilizar consultas frecuentes para agilizar la visualización de ciertos datos. Dichas vistas son las siguientes:
                 </p>
@@ -499,7 +512,7 @@
                 </ul>
             </div>
             <div class="mt-4" style="text-align: start;">
-                <h4>Scripts</h4>
+                <h4 class="texto-subt-efecto">Scripts</h4>
                 <p>
                     <ul>
                         <li>
@@ -521,13 +534,13 @@
         </div>
     </section>
 
-    <section id="bd_cine" class="card card-body mt-3">
-        <div class="px-md-5 text-center">
-            <h3 class="pb-4 pt-4" style="text-align: start;">3. Base de datos: Cine</h3>
-            <p style="text-align: justify;">
+    <section id="bd_cine" class="card card-body mt-3 card-borde">
+        <div class="px-md-5">
+            <h3 class="pb-4 pt-4 texto-subt-efecto" style="text-align: start;">3. Base de datos: Cine</h3>
+            <p>
                 Para esta ocasión, se solicitó como proyecto académico de la materia Temas Especiales de Bases de Datos, realizar un base SQL que debe estar normalizada para cuidar la integridad y evitar redundancia en los datos, con el fin de gestionar un cine respecto a los boletos, funciones, clientes, salas, etc., de una empresa. Por lo tanto, se definió un modelo con 26 entidades, entre las cuales, algunas tablas funcionan como catálogos para datos que son repetitivos y no van a cambiar, tales como, <i>tipo_sala</i>, <i>clasificación</i>, <i>país</i>, <i>categoría</i>, entre otras. Por consecuencia, se buscó cuidar que los campos  fueran atómicos, las tablas contaran con llaves primarias, que las tablas tuvieran relación entre ellas como entidades bajo la lógica del modelo de negocio con llaves foráneas, y que, como se mencionó anteriormente, los campos que pudieran repetirse con frecuencia como los son países, sucursal, etc., entonces terminaran siendo tablas catálago. Con fin demostrativo, en esta ocasión se generó el script <i>.sql</i> a partir del modelo entidad-relación generado en MySQL Workbench aplicando forward engineering.
             </p>
-            <h4 style="text-align: start;">Entidades</h4>
+            <h4 class="texto-subt-efecto" style="text-align: start;">Entidades</h4>
             <ul>
                 <li>
                     <p style="text-align: justify;">
@@ -704,7 +717,7 @@
                 </li>
             </ul>
             <div class="mt-4" style="text-align: start;">
-                <h4>Scripts</h4>
+                <h4 class="texto-subt-efecto">Scripts</h4>
                 <p>
                     <ul>
                         <li>

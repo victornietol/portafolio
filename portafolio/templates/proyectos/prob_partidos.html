@@ -7,12 +7,22 @@
 {% block content %}
 
     <div class="mt-5 mb-4">
-        <h1 class="display-4 text-center">Probabilidades de partidos</h1>
+        <h1 class="display-4 text-center">
+            <span class="palabra">
+                <span class="letra-hover-efecto">P</span><span class="letra-hover-efecto">r</span><span class="letra-hover-efecto">o</span><span class="letra-hover-efecto">b</span><span class="letra-hover-efecto">a</span><span class="letra-hover-efecto">b</span><span class="letra-hover-efecto">i</span><span class="letra-hover-efecto">l</span><span class="letra-hover-efecto">i</span><span class="letra-hover-efecto">d</span><span class="letra-hover-efecto">a</span><span class="letra-hover-efecto">d</span><span class="letra-hover-efecto">e</span><span class="letra-hover-efecto">s</span>
+            </span>
+            <span>
+                <span class="letra-hover-efecto">d</span><span class="letra-hover-efecto">e</span>
+            </span>
+            <span class="palabra">
+                <span class="letra-hover-efecto">p</span><span class="letra-hover-efecto">a</span><span class="letra-hover-efecto">r</span><span class="letra-hover-efecto">t</span><span class="letra-hover-efecto">i</span><span class="letra-hover-efecto">d</span><span class="letra-hover-efecto">o</span><span class="letra-hover-efecto">s</span>
+            </span>
+        </h1>
     </div>
 
     <div class="container">
         <div class="row">
-            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light">
+            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light efecto-card-glow">
                 <div class="px-md-5 text-center">
                     <h3>Tecnologías empleadas</h3>
                     <p>
@@ -23,7 +33,7 @@
                 </div>
             </section>
             
-            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light">
+            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light efecto-card-glow">
                 <div class="px-md-5 text-center">
                     <h3>Repositorio</h3>
                     <p>
@@ -38,10 +48,10 @@
         </div>
     </div>
     
-    <section class="card card-body mt-2">
-        <div class="px-md-5 text-center">
-            <h3 class="pb-3 pt-3" style="text-align: start;">Descripción del sistema</h3>
-            <p style="text-align: justify;">
+    <section class="card card-body mt-2 card-borde">
+        <div class="px-md-5">
+            <h3 class="pb-3 pt-3 texto-subt-efecto" style="text-align: start;">Descripción del sistema</h3>
+            <p>
                 Como proyecto académico de la materia Modelado y Simulación se propuso realizar un sistema que simulara algún tipo de evento, por lo cual, se tomó la decisión de construir un sencillo sistema en Python con el que se pudieran obtener las probabilidades de que al enfrentarse dos equipos de futbol se obtuvieran como resultado los porcentajes de victoria o empate del encuentro.
                 <br><br>
                 Estas probabilidades se obtienen utilizando la distribución de Poisson y modelos simplificados basados en estadísticas pasadas con datos introducidos por el usuario, los cuales, corresponden a goles anotados, goles recibidos, partidos jugados, tiros a puerta, porterías imbatidas, cantidad de goles recientes por encuentro de sus últimos encuentros, y un factor de local. Los resultados se muestran mediante gráficas para facilitar su visualización y análisis con ayuda de Matplotlib.
@@ -51,23 +61,23 @@
         </div>
     </section>
 
-    <section class="card card-body mt-3">
-        <div class="px-md-5 text-center">
-            <h3 class="pb-4 pt-4" style="text-align: start;">Funcionamiento del sistema</h3>
+    <section class="card card-body mt-3 card-borde">
+        <div class="px-md-5">
+            <h3 class="pb-4 pt-4 texto-subt-efecto" style="text-align: start;">Funcionamiento del sistema</h3>
             <section class="card card-body mb-2">
-               <p style="text-align: justify;">
+               <p>
                     Al ejecutar el programa, se abre la siguiente ventana con datos predeterminados (estos datos se pueden borran con el botón "Limpiar campos"). Para realizar una simulación se deben llenar los campos y presionar el botón "Iniciar".
                </p>
                <img src="{% static 'portafolio/img/proyectos/prob_partidos/1.png' %}" title="Interfaz del sistema" class="img-fluid mx-auto d-block border border-dark rounded" data-bs-toggle="modal" data-bs-target="#modalImagen" style="cursor: zoom-in;" alt="Img sistema" loading="lazy">
             </section>
             <section class="card card-body mt-2 mb-2">
-                <p style="text-align: justify;">
+                <p>
                     En caso de que el usuario introduzca un valor erróneo o haya un campo vacío, entonces se muestra un mensaje de error como en la siguiente captura. 
                 </p>
                 <img src="{% static 'portafolio/img/proyectos/prob_partidos/2.png' %}" title="Error en un campo" class="img-fluid mx-auto d-block border border-dark rounded" data-bs-toggle="modal" data-bs-target="#modalImagen" style="cursor: zoom-in;" alt="Img error sistema" loading="lazy">
             </section>
             <section class="card card-body mt-2 mb-2 pb-2">
-                <p style="text-align: justify;">
+                <p>
                     Una vez presionado el botón "Iniciar", se muestran los resultados de la simulación en la parte derecha de la ventana, donde se puede cambiar la visualización entre tres gráficas distintas.
                 </p>
                 <img src="{% static 'portafolio/img/proyectos/prob_partidos/3.png' %}" title="Resultados 1" class="img-fluid mx-auto d-block border border-dark rounded mb-2" data-bs-toggle="modal" data-bs-target="#modalImagen" style="cursor: zoom-in;" alt="Img resultados sistema" loading="lazy">
@@ -77,52 +87,52 @@
         </div>
     </section>
 
-    <section class="card card-body mt-3">
-        <div class="px-md-5 text-center">
-            <h3 class="pb-4 pt-4" style="text-align: start;">Descripción de la interfaz</h3>
+    <section class="card card-body mt-3 card-borde">
+        <div class="px-md-5">
+            <h3 class="pb-4 pt-4 texto-subt-efecto" style="text-align: start;">Descripción de la interfaz</h3>
             <img src="{% static 'portafolio/img/proyectos/prob_partidos/6.png' %}" title="Descripcion interfaz" class="img-fluid mx-auto d-block" data-bs-toggle="modal" data-bs-target="#modalImagen" style="cursor: zoom-in;" alt="Img interfaz sistema" loading="lazy">
         </div>
         <div class="mt-2 mb-3"></div>
         <div class="px-md-5">
             <section class="card card-body mt-2 mb-2">
                 <strong>1. Campos de entrada</strong>
-                <p style="text-align: justify;">
+                <p>
                     En esta sección se introducen las estadísticas de cada equipo para poder realizar la simulación.
                 </p>
             </section>
             <section class="card card-body mt-2 mb-2">
                 <strong>2. Botón "Iniciar"</strong>
-                <p style="text-align: justify;">
+                <p>
                     Ejecuta la simulación con los datos introducidos. En caso de que un campo contenga un valor incorrecto entonces se muestra un mensaje de error.
                 </p>
             </section>
             <section class="card card-body mt-2 mb-2">
                 <strong>3. Botón "Limpiar campos"</strong>
-                <p style="text-align: justify;">
+                <p>
                     Elimina los valores de los campos de las estadísticas de cada equipo, así como, los resultados y las imagenes de las gráficas.
                 </p>
             </section>
             <section class="card card-body mt-2 mb-2">
                 <strong>4. Resultados</strong>
-                <p style="text-align: justify;">
+                <p>
                     En esta sección se muestran los valores de las probabilidades de victoria o empate, y el promedio de goles del encuentro.
                 </p>
             </section>
             <section class="card card-body mt-2 mb-2">
                 <strong>5. Gráficas</strong>
-                <p style="text-align: justify;">
+                <p>
                     Muestra las gráficas con los datos generados en la simulación.
                 </p>
             </section>
             <section class="card card-body mt-2 mb-2">
                 <strong>6. Indicador de posición</strong>
-                <p style="text-align: justify;">
+                <p>
                     Este indicador muestra cuál de las tres gráficas se mmuestra en pantalla. Si se cambia de gráfica, entonces el indicador cambia de posición. 
                 </p>
             </section>
             <section class="card card-body mt-2 mb-2">
                 <strong>7. Botón de desplazamiento</strong>
-                <p style="text-align: justify;">
+                <p>
                     Los botones con flechas sirven para cambiar entre una gráfica y otra.
                 </p>
             </section>

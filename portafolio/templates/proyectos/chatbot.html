@@ -7,12 +7,14 @@
 {% block content %}
 
     <div class="mt-5 mb-4">
-        <h1 class="display-4 text-center">Chatbot</h1>
+        <h1 class="display-4 text-center">
+            <span class="letra-hover-efecto">C</span><span class="letra-hover-efecto">h</span><span class="letra-hover-efecto">a</span><span class="letra-hover-efecto">t</span><span class="letra-hover-efecto">b</span><span class="letra-hover-efecto">o</span><span class="letra-hover-efecto">t</span>
+        </h1>
     </div>
 
     <div class="container">
         <div class="row">
-            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light">
+            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light efecto-card-glow">
                 <div class="px-md-5 text-center">
                     <h3>Tecnologías empleadas</h3>
                     <p>
@@ -23,7 +25,7 @@
                 </div>
             </section>
             
-            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light">
+            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light efecto-card-glow">
                 <div class="px-md-5 text-center">
                     <h3>Repositorio</h3>
                     <p>
@@ -38,10 +40,10 @@
         </div>
     </div>
     
-    <section class="card card-body mt-2">
-        <div class="px-md-5 text-center">
-            <h3 class="pb-3 pt-3" style="text-align: start;">Descripción del sistema</h3>
-            <p style="text-align: justify;">
+    <section class="card card-body mt-2 card-borde">
+        <div class="px-md-5">
+            <h3 class="pb-3 pt-3 texto-subt-efecto" style="text-align: start;">Descripción del sistema</h3>
+            <p>
                 Como proyecto académico de matematicas discretas, correspondiente al tema de grafos, se construyó en Python un chatbot sencillo basado en esta estructura e implementado con diccionarios. Su funcionamiento es muy básico, si el sistema detecta en la entrada alguna palabra clave (tema dentro de su base de conocimiento), entonces muestra recomendaciones de contenido multimedia en plataformas como Netflix, HBO Max, Disney+, Youtube y Spotify. Estas recomendaciones serán películas, series, documentales, canciones o canales dependiendo de la plataforma que se le indique al chatbot.
                 <br><br>
                 Además, se utilizó el paquete tkinter para crear una sencilla interfaz gráfica que ayuda a que el usuario tenga una experiencia muy parecida a la de las aplicaciones de mensajería convencionales. Por otro lado, el código del programa tiene muchos aspectos de mejora debido a que este fue mi primer proyecto de este estilo con Python. 
@@ -56,9 +58,9 @@
         </div>
     </section>
 
-    <section class="card card-body mt-3">
+    <section class="card card-body mt-3 card-borde">
         <div class="px-md-5 text-center">
-            <h3 class="pb-4 pt-4" style="text-align: start;">Funcionamiento del sistema</h3>
+            <h3 class="pb-4 pt-4 texto-subt-efecto" style="text-align: start;">Funcionamiento del sistema</h3>
             <section class="card card-body">
                 <img src="{% static 'portafolio/img/proyectos/chatbot/1.png' %}" title="Descripcion chatbot 1" class="img-fluid mx-auto d-block" data-bs-toggle="modal" data-bs-target="#modalImagen" style="cursor: pointer;" alt="Img chatbot 1" loading="lazy">
             </section>  
@@ -109,9 +111,9 @@
         </div>
     </section>
 
-    <section class="card card-body mt-3">
+    <section class="card card-body mt-3 card-borde">
         <div class="px-md-5 text-center">
-            <h3 class="pb-4 pt-4" style="text-align: start;">Descripción de la interfaz</h3>
+            <h3 class="pb-4 pt-4 texto-subt-efecto" style="text-align: start;">Descripción de la interfaz</h3>
             <img src="{% static 'portafolio/img/proyectos/chatbot/13.png' %}" title="Descripcion chatbot 13" class="img-fluid mx-auto d-block" data-bs-toggle="modal" data-bs-target="#modalImagen" style="cursor: pointer;" alt="Img chatbot 13" loading="lazy">
         </div>
         <div class="mt-3 mb-3"></div>

@@ -111,3 +111,15 @@
     color: #00052f;
     font-weight: 600;
 }
+
+.card-borde {
+    transition: border-color 0.3s ease;
+}
+
+.card-borde:hover {
+    border-color: #00052f;
+}
+
+.palabra {
+    white-space: nowrap;
+}
