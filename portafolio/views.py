@@ -65,3 +65,8 @@ def proyecto_practica_cifrado(request):
     return render(request, 'proyectos/practica_cifrado.html', {
         'pagina_actual':'proyectos'
     })
+
+def proyecto_ubicaciones_transporte(request):
+    return render(request, 'proyectos/ubicaciones_transporte.html', {
+        'pagina_actual':'proyectos'
+    })

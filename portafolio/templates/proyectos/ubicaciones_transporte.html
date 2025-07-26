@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Ubicaciones transporte | Portafolio{% endblock %}
+
+{% block content %}
+
+    <div class="mt-5 mb-4">
+        <h1 class="display-4 text-center">
+            <span>
+                <span class="letra-hover-efecto">U</span><span class="letra-hover-efecto">b</span><span class="letra-hover-efecto">i</span><span class="letra-hover-efecto">c</span><span class="letra-hover-efecto">a</span><span class="letra-hover-efecto">c</span><span class="letra-hover-efecto">i</span><span class="letra-hover-efecto">o</span><span class="letra-hover-efecto">n</span><span class="letra-hover-efecto">e</span><span class="letra-hover-efecto">s</span>
+            </span>
+            <span class="palabra">
+                <span class="letra-hover-efecto">M</span><span class="letra-hover-efecto">e</span><span class="letra-hover-efecto">t</span><span class="letra-hover-efecto">r</span><span class="letra-hover-efecto">o</span>
+            </span>
+            <span>
+                <span class="letra-hover-efecto">y</span>
+            </span>
+            <span class="palabra">
+                <span class="letra-hover-efecto">M</span><span class="letra-hover-efecto">e</span><span class="letra-hover-efecto">t</span><span class="letra-hover-efecto">r</span><span class="letra-hover-efecto">o</span><span class="letra-hover-efecto">b</span><span class="letra-hover-efecto">ú</span><span class="letra-hover-efecto">s</span>
+            </span>
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light efecto-card-glow">
+                <div class="px-md-5 text-center">
+                    <h3>Tecnologías empleadas</h3>
+                    <p>
+                        <i class="bi bi-code-slash"></i> JavaScript
+                        <br>
+                        <i class="bi bi-gear-fill"></i> HTML • CSS • bcrypt • Bootstrap • Leaflet
+                        <br>
+                        <i class="bi bi-cloud"></i> InfinityFree
+                    </p>
+                </div>
+            </section>
+            
+            <section class="col-md-6 col-lg-4 card card-body m-1 d-flex flex-column align-items-center justify-content-center bg-light efecto-card-glow">
+                <div class="px-md-5 text-center">
+                    <h3>Repositorio</h3>
+                    <p>
+                        <i class="bi bi-github"></i>
+                        <br>
+                        <a class="text-break w-100" href="https://github.com/victornietol/UbicacionesMetro-Metrobus" target="_blank" rel="noopener noreferrer">https://github.com/victornietol/UbicacionesMetro-Metrobus</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <section class="card card-body mt-2 card-borde">
+        <div class="px-md-5">
+            <h3 class="pb-3 pt-3 texto-subt-efecto" style="text-align: start;">Descripción</h3>
+            <p>
+                Este sitio fue creado con el objetivo de agilizar la búsqueda y localización de las estaciones cercanas a una ubicación específica de los sistemas de transporte público Metro y Metrobús.
+            </p>
+            <p>
+                El funcionamiento es muy sencillo, se selecciona una de las dos opciones de tipo de transporte según lo requiera el usuario. Posteriormente se debe decider entre usar la ubicación actual o introducir una manualmente, ambas mostrarán en el mapa las estaciones de Metro o Metrobus más cercanas a la ubicación indicada según el tipo de transporte selccionado anteriormente. Cuando se introduzca la ubicación entonces se mostrarán las estaciones más cercanas al punto, pero se debe tener en cuenta que la ubicación mostrada puede no ser completamente precisa. Para obtener la ubicaciones y generar el mapa se utilizan <code>Leaflet</code> y <code>OpenStreetMap</code>.
+            </p>
+            <p>
+                En la página de inicio, en la seccion inferior al mapa que muestra las ubicaciones de cada estación se indican las 5 estaciones más cercanas a la ubicación introducida. Cada estación es un boton que centra la vista del mapa en la estación correspondiente. Por otro lado, en la página Metro se muestra el mapa de la red del sistema de transporte y debajo del mapa se indican las estaciones por línea, mientras que en la página Metrobús solo se muestra el mapa de la red.
+            </p>
+            <div class="text-center">
+                <a class="btn btn-dark btn-hover-efecto mb-3 mt-4" style="background: #020059;" href="https://ubicaciones-metro.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Visitar sitio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="algotimo_genetico" class="card card-body mt-2 card-borde">
+        <div class="px-md-5">
+            <h3 class="pb-3 pt-3 texto-subt-efecto" style="text-align: start;">Imágenes</h3>
+            <div>
+                <h4 class="texto-subt-efecto">Página Inicio</h4>
+                <img src="{% static 'portafolio/img/proyectos/ubicaciones_transporte/prev.png' %}" title="Pantalla de inicio de sesión" class="img-fluid mx-auto d-block rounded border border-dark" data-bs-toggle="modal" data-bs-target="#modalImagen" style="cursor: zoom-in;" alt="Img sistema 4" loading="lazy">
+            </div>
+            <div class="mt-5">
+                <h4 class="texto-subt-efecto">Página Metro</h4>
+                <img src="{% static 'portafolio/img/proyectos/ubicaciones_transporte/1.png' %}" title="Pantalla de registro" class="img-fluid mx-auto d-block rounded border border-dark" data-bs-toggle="modal" data-bs-target="#modalImagen" style="cursor: zoom-in;" alt="Img sistema 3" loading="lazy">
+                <img src="{% static 'portafolio/img/proyectos/ubicaciones_transporte/2.png' %}" title="Pantalla de registro" class="img-fluid mx-auto d-block rounded border border-dark mt-2" data-bs-toggle="modal" data-bs-target="#modalImagen" style="cursor: zoom-in;" alt="Img sistema 3" loading="lazy">
+            </div>
+            <div class="mt-5">
+                <h4 class="texto-subt-efecto">Página Metrobús</h4>
+                <img src="{% static 'portafolio/img/proyectos/ubicaciones_transporte/3.png' %}" title="Cifrado de texto" class="img-fluid mx-auto d-block rounded border border-dark" data-bs-toggle="modal" data-bs-target="#modalImagen" style="cursor: zoom-in;" alt="Img sistema 1" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
